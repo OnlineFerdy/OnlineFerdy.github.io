@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bouqs Co.</title>
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Remix Icon (Untuk Icon) -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer-overlay" id="mobileDrawerOverlay"></div>
+    <div class="mobile-drawer" id="mobileDrawer">
+        <div class="drawer-header">
+            <img src="images/theLogo.png" alt="The Bouqs Co." class="drawer-logo">
+            <span class="close-drawer" id="closeDrawer"><i class="ri-close-line"></i></span>
+        </div>
+        <div class="drawer-content">
+            <div class="drawer-links">
+                <a href="#"><i class="ri-palette-line"></i> Custom</a>
+                <a href="#"><i class="ri-calendar-event-line"></i> Order for event</a>
+                <a href="#"><i class="ri-presentation-line"></i> Order for training</a>
+                <a href="#"><i class="ri-shopping-bag-line"></i> Shopee</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="burger-menu" id="burgerMenu">
+                <i class="ri-menu-line"></i>
+            </div>
+            <img src="images/theLogo.png" alt="The Bouqs Co." class="logo">
+
+            <div class="header-icons">
+                <a href="#">Custom</a>
+                <a href="#">Order untuk acara</a>
+                <a href="#">Pelatihan</a>
+                <a href="#">Shopee</a>
+            </div>
+        </div>
+        <nav>
+            <!-- <ul class="nav-links">
+                <li>All Flowers</li>
+                <li>Occasions</li>
+                <li>Birthday</li>
+                <li>Sympathy</li>
+                <li>Next Day</li>
+                <li>Same Day</li>
+                <li>Weddings</li>
+                <li>Gifts</li>
+                <li>Subscriptions</li>
+            </ul> -->
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Timeless beauty that never fades.</h1>
+                <p>Artificial flowers for every occasion—from birthdays to thank yous to just because.</p>
+                <button class="btn-primary">Shop Now</button>
+            </div>
+            <div class="hero-image-wrapper">
+                <img src="bunga mama cropped/basket bunga.png" alt="Modern Bouquets" class="hero-flower-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Bar -->
+    <section class="features">
+        <div class="container features-list">
+            <div class="feature-item"><i class="ri-sparkling-fill"></i> Aesthetic</div>
+            <div class="feature-item"><i class="ri-leaf-line"></i> Organic</div>
+            <div class="feature-item"><i class="ri-history-line"></i> Last long</div>
+            <div class="feature-item"><i class="ri-hand-heart-line"></i> Handmade</div>
+        </div>
+    </section>
+
+    <!-- Bestselling Section -->
+    <section class="bestsellers">
+        <div class="container">
+            <h2>Bestselling Crafts</h2>
+            <div class="category-pills">
+                <button class="pill active" data-category="Best-Sellers">Best-Sellers</button>
+                <button class="pill" data-category="Moderns">Moderns</button>
+                <button class="pill" data-category="Traditionals">Traditionals</button>
+                <button class="pill" data-category="Bouquets">Bouquets</button>
+                <button class="pill" data-category="Crafts">Crafts</button>
+                <button class="pill" data-category="Customs">Customs</button>
+                <!-- <button class="pill" data-category="Trainings">Trainings</button> -->
+            </div>
+        </div>
+        <!-- Product Grid -->
+        <div class="container product-grid" id="product-grid">
+            <!-- Products will be rendered here by JS -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <img src="images/theLogo.png" alt="The Bouqs Co." class="footer-logo">
+            <div class="footer-socials">
+                <a href="#"><i class="ri-facebook-fill"></i></a>
+                <a href="#"><i class="ri-instagram-line"></i></a>
+                <a href="#"><i class="ri-tiktok-fill"></i></a>
+                <a href="#"><i class="ri-pinterest-fill"></i></a>
+            </div>
+            <p class="footer-address">Medan Johor,Jl.Eka Rasmi, Kompleks Johor Townhouse, No. 20C</p>
+            <p class="footer-copyright">&copy; 2027 Aida Craft. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
