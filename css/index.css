@@ -68,6 +68,7 @@ header {
     gap: 5px;
     padding-bottom: 2px;
     border-bottom: 3px solid transparent;
+    white-space: nowrap;
 }
 
 .header-icons a:hover {
@@ -395,6 +396,17 @@ header {
 }
 
 /* RESPONSIVE: Tablet & Mobile */
+@media (max-width: 1200px) {
+    .burger-menu {
+        display: block !important;
+        color: #333;
+    }
+
+    .header-icons {
+        display: none;
+    }
+}
+
 @media (max-width: 1024px) {
     .product-grid {
         grid-template-columns: repeat(3, 1fr);
@@ -402,18 +414,6 @@ header {
 }
 
 @media (max-width: 768px) {
-
-    .burger-menu {
-        display: block !important;
-        /* Show on mobile */
-        color: #333;
-        /* Ensure icon is visible */
-    }
-
-    /* Hide header links on mobile */
-    .header-icons {
-        display: none;
-    }
 
     /* Restore features bar on mobile (removed display: none) */
     .features {
