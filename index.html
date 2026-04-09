@@ -4,11 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Bouqs Co.</title>
+    <title>Aida Craft</title>
     <!-- Google Fonts: Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <!-- Remix Icon (Untuk Icon) -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
     <link rel="stylesheet" href="css/index.css">
 </head>
 
@@ -18,15 +22,15 @@
     <div class="mobile-drawer-overlay" id="mobileDrawerOverlay"></div>
     <div class="mobile-drawer" id="mobileDrawer">
         <div class="drawer-header">
-            <img src="images/theLogo.png" alt="The Bouqs Co." class="drawer-logo">
+            <img src="images/theLogo.png" alt="Aida Craft" class="drawer-logo">
             <span class="close-drawer" id="closeDrawer"><i class="ri-close-line"></i></span>
         </div>
         <div class="drawer-content">
             <div class="drawer-links">
-                <a href="#"><i class="ri-palette-line"></i> Custom</a>
-                <a href="#"><i class="ri-calendar-event-line"></i> Order for event</a>
-                <a href="#"><i class="ri-presentation-line"></i> Order for training</a>
-                <a href="#"><i class="ri-shopping-bag-line"></i> Shopee</a>
+                <a href="#" target="_blank"><i class="ri-palette-line"></i> Custom</a>
+                <a href="#" target="_blank"><i class="ri-calendar-event-line"></i> Order event</a>
+                <a href="#" target="_blank"><i class="ri-presentation-line"></i> Order training</a>
+                <a href="#" target="_blank"><i class="ri-shopping-bag-line"></i> Shopee</a>
             </div>
         </div>
     </div>
@@ -37,13 +41,13 @@
             <div class="burger-menu" id="burgerMenu">
                 <i class="ri-menu-line"></i>
             </div>
-            <img src="images/theLogo.png" alt="The Bouqs Co." class="logo">
+            <img src="images/theLogo.png" alt="Aida Craft" class="logo">
 
             <div class="header-icons">
-                <a href="#">Custom</a>
-                <a href="#">Order untuk acara</a>
-                <a href="#">Pelatihan</a>
-                <a href="#">Shopee</a>
+                <a href="https://wa.me/6281397796565" target="_blank">Custom</a>
+                <a href="https://wa.me/6281397796565" target="_blank">Order acara</a>
+                <a href="https://wa.me/6281397796565" target="_blank">Pelatihan</a>
+                <a href="#" target="_blank">Shopee</a>
             </div>
         </div>
         <nav>
@@ -67,7 +71,9 @@
             <div class="hero-text">
                 <h1>Timeless beauty that never fades.</h1>
                 <p>Artificial flowers for every occasion—from birthdays to thank yous to just because.</p>
-                <button class="btn-primary">Shop Now</button>
+                <button class="btn-primary"
+                    onclick="document.querySelector('.bestsellers').scrollIntoView({ behavior: 'smooth' })">Shop
+                    Now</button>
             </div>
             <div class="hero-image-wrapper">
                 <img src="bunga mama cropped/basket bunga.png" alt="Modern Bouquets" class="hero-flower-img">
@@ -108,12 +114,15 @@
     <!-- Footer -->
     <footer>
         <div class="container footer-content">
-            <img src="images/theLogo.png" alt="The Bouqs Co." class="footer-logo">
+            <img src="images/theLogo.png" alt="Aida Craft" class="footer-logo">
             <div class="footer-socials">
-                <a href="#"><i class="ri-facebook-fill"></i></a>
-                <a href="#"><i class="ri-instagram-line"></i></a>
-                <a href="#"><i class="ri-tiktok-fill"></i></a>
-                <a href="#"><i class="ri-pinterest-fill"></i></a>
+                <a href="https://www.facebook.com/share/1bKyJ4kGnD/" target="_blank"><i
+                        class="ri-facebook-fill"></i></a>
+                <a href="https://www.instagram.com/aidacrafter?igsh=MXYwMTVtMWZsa2lleg==" target="_blank"><i
+                        class="ri-instagram-line"></i></a>
+                <a href="https://www.tiktok.com/@aidacraftcornhusk?_r=1&_t=ZS-95Nk5hb1vbG" target="_blank"><i
+                        class="ri-tiktok-fill"></i></a>
+                <a href="#" target="_blank"><i class="ri-pinterest-fill"></i></a>
             </div>
             <p class="footer-address">Medan Johor,Jl.Eka Rasmi, Kompleks Johor Townhouse, No. 20C</p>
             <p class="footer-copyright">&copy; 2027 Aida Craft. All Rights Reserved.</p>
