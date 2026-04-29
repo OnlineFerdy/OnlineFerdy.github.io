@@ -5,7 +5,7 @@ const products = [
         name: "Modern Rose Medley",
         category: "Moderns",
         price: 150000,
-        image: "../bunga mama cropped/modern/aneka mawar modern sdkgjdsfk.jpeg",
+        image: "bunga mama cropped/modern/aneka mawar modern sdkgjdsfk.jpeg",
         badge: "Pre-order"
     },
     {
@@ -13,7 +13,7 @@ const products = [
         name: "L'Orchidée Moderne",
         category: "Moderns",
         price: 250000,
-        image: "../bunga mama cropped/modern/anggrek modern.jpeg",
+        image: "bunga mama cropped/modern/anggrek modern.jpeg",
         badge: "Pre-order"
     },
     {
@@ -21,7 +21,7 @@ const products = [
         name: "Royal Orchid Grace",
         category: "Moderns",
         price: 280000,
-        image: "../bunga mama cropped/modern/anggrek modern2.jpeg",
+        image: "bunga mama cropped/modern/anggrek modern2.jpeg",
         badge: "Pre-order"
     },
     {
@@ -29,7 +29,7 @@ const products = [
         name: "Ethereal White Orchid",
         category: "Moderns",
         price: 300000,
-        image: "../bunga mama cropped/modern/anggrek modern3.jpeg",
+        image: "bunga mama cropped/modern/anggrek modern3.jpeg",
         badge: "Pre-order"
     },
     {
@@ -37,7 +37,7 @@ const products = [
         name: "Pure White Orchid",
         category: "Moderns",
         price: 180000,
-        image: "../bunga mama cropped/modern/anggrek putih modern sdfkasjf.jpeg",
+        image: "bunga mama cropped/modern/anggrek putih modern sdfkasjf.jpeg",
         badge: "Pre-order"
     },
     {
@@ -45,7 +45,7 @@ const products = [
         name: "Maroon Orchid Allure",
         category: "Moderns",
         price: 220000,
-        image: "../bunga mama cropped/modern/bunga anggrek modern maroon.jpeg",
+        image: "bunga mama cropped/modern/bunga anggrek modern maroon.jpeg",
         badge: "Pre-order"
     },
     {
@@ -53,7 +53,7 @@ const products = [
         name: "Contemporary Table Bloom",
         category: "Moderns",
         price: 135000,
-        image: "../bunga mama cropped/modern/bunga meja modern askdgjsakfj.jpeg",
+        image: "bunga mama cropped/modern/bunga meja modern askdgjsakfj.jpeg",
         badge: "Pre-order"
     },
     {
@@ -61,7 +61,7 @@ const products = [
         name: "Jasmine & Rose Corner",
         category: "Moderns",
         price: 190000,
-        image: "../bunga mama cropped/modern/bunga melati dan mawar sudut skdfjakgj.jpeg",
+        image: "bunga mama cropped/modern/bunga melati dan mawar sudut skdfjakgj.jpeg",
         badge: "Pre-order"
     },
     {
@@ -69,7 +69,7 @@ const products = [
         name: "Corner Rose Elegance",
         category: "Moderns",
         price: 210000,
-        image: "../bunga mama cropped/modern/mawar modern sudut ksdfjsdkfj.jpeg",
+        image: "bunga mama cropped/modern/mawar modern sudut ksdfjsdkfj.jpeg",
         badge: "Pre-order"
     },
     {
@@ -77,7 +77,7 @@ const products = [
         name: "Modern Rose Essence",
         category: "Moderns",
         price: 165000,
-        image: "../bunga mama cropped/modern/mawar modern.jpeg",
+        image: "bunga mama cropped/modern/mawar modern.jpeg",
         badge: "Pre-order"
     },
     {
@@ -85,7 +85,7 @@ const products = [
         name: "Violet Rose Mystique",
         category: "Moderns",
         price: 145000,
-        image: "../bunga mama cropped/modern/mawar ungu modern sadf.jpeg",
+        image: "bunga mama cropped/modern/mawar ungu modern sadf.jpeg",
         badge: "Pre-order"
     },
     {
@@ -93,7 +93,7 @@ const products = [
         name: "Rose Souvenir Charm",
         category: "Moderns",
         price: 85000,
-        image: "../bunga mama cropped/modern/mawar untuk souvenir.jpeg",
+        image: "bunga mama cropped/modern/mawar untuk souvenir.jpeg",
         badge: "Pre-order"
     },
     {
@@ -101,7 +101,7 @@ const products = [
         name: "Modern Jasmine Scent",
         category: "Moderns",
         price: 125000,
-        image: "../bunga mama cropped/modern/melati modern.jpeg",
+        image: "bunga mama cropped/modern/melati modern.jpeg",
         badge: "Pre-order"
     },
     {
@@ -109,7 +109,7 @@ const products = [
         name: "Nest of Blooms",
         category: "Moderns",
         price: 350000,
-        image: "../bunga mama cropped/modern/sarang burung.jpeg",
+        image: "bunga mama cropped/modern/sarang burung.jpeg",
         badge: "Pre-order"
     },
     {
@@ -117,7 +117,7 @@ const products = [
         name: "Single Rose Elegance",
         category: "Moderns",
         price: 50000,
-        image: "../bunga mama cropped/modern/setangkai bunga mawar.jpeg",
+        image: "bunga mama cropped/modern/setangkai bunga mawar.jpeg",
         badge: "Pre-order"
     },
     {
@@ -125,7 +125,7 @@ const products = [
         name: "Modern Lotus Serenity",
         category: "Moderns",
         price: 175000,
-        image: "../bunga mama cropped/modern/teratai modern.jpeg",
+        image: "bunga mama cropped/modern/teratai modern.jpeg",
         badge: "Pre-order"
     },
     {
@@ -133,7 +133,7 @@ const products = [
         name: "Mystic Floral Touch",
         category: "Moderns",
         price: 160000,
-        image: "../bunga mama cropped/modern/unnamedgasdfasfd.jpg",
+        image: "bunga mama cropped/modern/unnamedgasdfasfd.jpg",
         badge: "Pre-order"
     },
 
@@ -143,7 +143,7 @@ const products = [
         name: "Traditional Basket Bloom",
         category: "Traditionals",
         price: 200000,
-        image: "../bunga mama cropped/traditional/basket flower.jpeg",
+        image: "bunga mama cropped/traditional/basket flower.jpeg",
         badge: "Pre-order"
     },
     {
@@ -151,7 +151,7 @@ const products = [
         name: "Jasmine Basket Heritage",
         category: "Traditionals",
         price: 180000,
-        image: "../bunga mama cropped/traditional/keranjang melati ghfgdsfg.jpeg",
+        image: "bunga mama cropped/traditional/keranjang melati ghfgdsfg.jpeg",
         badge: "Pre-order"
     },
     {
@@ -159,7 +159,7 @@ const products = [
         name: "Maroon Jasmine Fusion",
         category: "Traditionals",
         price: 195000,
-        image: "../bunga mama cropped/traditional/melati dan maroon.jpeg",
+        image: "bunga mama cropped/traditional/melati dan maroon.jpeg",
         badge: "Pre-order"
     },
     {
@@ -167,7 +167,7 @@ const products = [
         name: "Classic Jasmine Weave",
         category: "Traditionals",
         price: 150000,
-        image: "../bunga mama cropped/traditional/melati tradisional.jpeg",
+        image: "bunga mama cropped/traditional/melati tradisional.jpeg",
         badge: "Pre-order"
     },
     {
@@ -175,7 +175,7 @@ const products = [
         name: "Royal Jasmine Tradition",
         category: "Traditionals",
         price: 220000,
-        image: "../bunga mama cropped/traditional/melati tradisional2.jpeg",
+        image: "bunga mama cropped/traditional/melati tradisional2.jpeg",
         badge: "Pre-order"
     },
     {
@@ -183,7 +183,7 @@ const products = [
         name: "Lotus Souvenir Classic",
         category: "Traditionals",
         price: 95000,
-        image: "../bunga mama cropped/traditional/teratai tradisional untuk souvenir.jpeg",
+        image: "bunga mama cropped/traditional/teratai tradisional untuk souvenir.jpeg",
         badge: "Pre-order"
     },
 
@@ -193,7 +193,7 @@ const products = [
         name: "Floral Doll Artisan",
         category: "Crafts",
         price: 120000,
-        image: "../bunga mama cropped/crafts/boneka aghsdkfjasf.jpeg",
+        image: "bunga mama cropped/crafts/boneka aghsdkfjasf.jpeg",
         badge: "Pre-order"
     },
     {
@@ -201,7 +201,7 @@ const products = [
         name: "Bunny Bloom Craft",
         category: "Crafts",
         price: 130000,
-        image: "../bunga mama cropped/crafts/boneka kelinci kecil asdfsafj.jpeg",
+        image: "bunga mama cropped/crafts/boneka kelinci kecil asdfsafj.jpeg",
         badge: "Pre-order"
     },
     {
@@ -209,7 +209,7 @@ const products = [
         name: "Rose Brooch Delicate",
         category: "Crafts",
         price: 45000,
-        image: "../bunga mama cropped/crafts/bros mawar sdfkjgsfd.jpeg",
+        image: "bunga mama cropped/crafts/bros mawar sdfkjgsfd.jpeg",
         badge: "Pre-order"
     },
     {
@@ -217,7 +217,7 @@ const products = [
         name: "Assorted Floral Brooches",
         category: "Crafts",
         price: 40000,
-        image: "../bunga mama cropped/crafts/macam2 bros.jpeg",
+        image: "bunga mama cropped/crafts/macam2 bros.jpeg",
         badge: "Pre-order"
     },
     {
@@ -225,7 +225,7 @@ const products = [
         name: "Floral Tissue Box",
         category: "Crafts",
         price: 85000,
-        image: "../bunga mama cropped/crafts/tempat tissue sadfkjsdkafj.jpeg",
+        image: "bunga mama cropped/crafts/tempat tissue sadfkjsdkafj.jpeg",
         badge: "Pre-order"
     },
 
@@ -235,7 +235,7 @@ const products = [
         name: "Custom Rose Basket",
         category: "Customs",
         price: 250000,
-        image: "../bunga mama cropped/custom/bunga mawar keranjang.jpeg",
+        image: "bunga mama cropped/custom/bunga mawar keranjang.jpeg",
         badge: "Pre-order"
     },
     {
@@ -243,7 +243,7 @@ const products = [
         name: "Bespoke Floral Arrangement",
         category: "Customs",
         price: 300000,
-        image: "../bunga mama cropped/custom/sadfsagfsadfsaf.jpeg",
+        image: "bunga mama cropped/custom/sadfsagfsadfsaf.jpeg",
         badge: "Pre-order"
     },
     {
@@ -251,7 +251,7 @@ const products = [
         name: "Grand Standing Flower",
         category: "Customs",
         price: 500000,
-        image: "../bunga mama cropped/custom/standing flower sadfkjgasf.jpeg",
+        image: "bunga mama cropped/custom/standing flower sadfkjgasf.jpeg",
         badge: "Pre-order"
     },
 
@@ -261,7 +261,7 @@ const products = [
         name: "Traditional Bouquet Charm",
         category: "Bouquets",
         price: 180000,
-        image: "../bunga mama cropped/bouquet/bouquet bunga tradisional agskdjf.jpeg",
+        image: "bunga mama cropped/bouquet/bouquet bunga tradisional agskdjf.jpeg",
         badge: "Pre-order"
     },
     {
@@ -269,7 +269,7 @@ const products = [
         name: "Crimson Rose Bouquet",
         category: "Bouquets",
         price: 220000,
-        image: "../bunga mama cropped/bouquet/bouquet mawar merah askgjaskfj.jpeg",
+        image: "bunga mama cropped/bouquet/bouquet mawar merah askgjaskfj.jpeg",
         badge: "Pre-order"
     },
     {
@@ -277,7 +277,7 @@ const products = [
         name: "Modern Rose Bouquet",
         category: "Bouquets",
         price: 240000,
-        image: "../bunga mama cropped/bouquet/bouquet mawar modern asdfasdf.jpeg",
+        image: "bunga mama cropped/bouquet/bouquet mawar modern asdfasdf.jpeg",
         badge: "Pre-order"
     },
     {
@@ -285,7 +285,7 @@ const products = [
         name: "Soft Pink & White Roses",
         category: "Bouquets",
         price: 230000,
-        image: "../bunga mama cropped/bouquet/bouquet mawar soft pink dan white sadkfjksdagj.jpeg",
+        image: "bunga mama cropped/bouquet/bouquet mawar soft pink dan white sadkfjksdagj.jpeg",
         badge: "Pre-order"
     },
     {
@@ -293,7 +293,7 @@ const products = [
         name: "Pure White Bouquet",
         category: "Bouquets",
         price: 210000,
-        image: "../bunga mama cropped/bouquet/bouquet putih asdfkjsgdkjkf.jpeg",
+        image: "bunga mama cropped/bouquet/bouquet putih asdfkjsgdkjkf.jpeg",
         badge: "Pre-order"
     },
     {
@@ -301,7 +301,7 @@ const products = [
         name: "Elegant Mixed Bouquet",
         category: "Bouquets",
         price: 260000,
-        image: "../bunga mama cropped/bouquet/bouquet sdfkjskgjsdkf.jpeg",
+        image: "bunga mama cropped/bouquet/bouquet sdfkjskgjsdkf.jpeg",
         badge: "Pre-order"
     },
     {
@@ -309,7 +309,7 @@ const products = [
         name: "Single Red Rose Gift",
         category: "Bouquets",
         price: 60000,
-        image: "../bunga mama cropped/bouquet/bouquet setangkai mawar merah.jpeg",
+        image: "bunga mama cropped/bouquet/bouquet setangkai mawar merah.jpeg",
         badge: "Pre-order"
     },
     {
@@ -317,7 +317,7 @@ const products = [
         name: "Graduation Glory Bouquet",
         category: "Bouquets",
         price: 190000,
-        image: "../bunga mama cropped/bouquet/bouquet wisuda aksdjgfsakdfj.jpeg",
+        image: "bunga mama cropped/bouquet/bouquet wisuda aksdjgfsakdfj.jpeg",
         badge: "Pre-order"
     },
     {
@@ -325,7 +325,7 @@ const products = [
         name: "Prosperity Money Bouquet",
         category: "Bouquets",
         price: 1150000, // Assuming 10x100k + fee
-        image: "../bunga mama cropped/bouquet/buket uang 10 lembar 100 ribu.jpeg",
+        image: "bunga mama cropped/bouquet/buket uang 10 lembar 100 ribu.jpeg",
         badge: "Pre-order"
     }
 ];
