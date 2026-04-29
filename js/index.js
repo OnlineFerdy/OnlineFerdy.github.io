@@ -7,6 +7,22 @@ document.addEventListener('DOMContentLoaded', () => {
         return new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format(amount);
     };
 
+    let currentLang = localStorage.getItem('lang') || 'id'; // default to ID
+
+    const updateLanguageText = () => {
+        document.querySelectorAll('.lang-text').forEach(el => {
+            el.innerHTML = el.getAttribute(`data-${currentLang}`);
+        });
+        const langToggle = document.getElementById('langToggle');
+        if (langToggle) {
+            langToggle.textContent = currentLang === 'id' ? 'EN' : 'ID';
+        }
+        const activePill = document.querySelector('.pill.active');
+        if (activePill) {
+            renderProducts(activePill.getAttribute('data-category'));
+        }
+    };
+
     // Function to render products
     const renderProducts = (category) => {
         productGrid.innerHTML = '';
@@ -31,14 +47,19 @@ document.addEventListener('DOMContentLoaded', () => {
             productCard.classList.add('product-card');
 
             // Badge from data
-            const badgeHtml = product.badge ? `<span class="badge">${product.badge}</span>` : '';
+            let badgeText = product.badge;
+            if (badgeText === 'Pre-order') {
+                badgeText = currentLang === 'id' ? 'Pesan Sekarang' : 'Pre-order';
+            }
+            const badgeHtml = badgeText ? `<span class="badge">${badgeText}</span>` : '';
+            const madeWithLoveText = currentLang === 'id' ? 'Dibuat dengan Cinta' : 'Made with Love';
 
             productCard.innerHTML = `
                 <img src="${product.image}" alt="${product.name}" class="product-img">
                 <div class="product-info">
                     <h3>${product.name}</h3>
                     <div class="product-divider"></div>
-                    <p class="price">Made with Love</p>
+                    <p class="price">${madeWithLoveText}</p>
                     <p class="subscribe-price"><strong>${formatCurrency(product.price)}</strong></p>
                     ${badgeHtml}
                 </div>
@@ -83,4 +104,40 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (closeDrawer) closeDrawer.addEventListener('click', closeDrawerFunc);
     if (mobileDrawerOverlay) mobileDrawerOverlay.addEventListener('click', closeDrawerFunc);
+
+    // Dark mode logic
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    let isDarkMode = localStorage.getItem('darkMode') === 'true';
+
+    const applyDarkMode = () => {
+        if (isDarkMode) {
+            document.body.classList.add('dark-mode');
+            darkModeToggle.innerHTML = '<i class="ri-sun-line"></i>';
+        } else {
+            document.body.classList.remove('dark-mode');
+            darkModeToggle.innerHTML = '<i class="ri-moon-line"></i>';
+        }
+    };
+
+    applyDarkMode();
+
+    if (darkModeToggle) {
+        darkModeToggle.addEventListener('click', () => {
+            isDarkMode = !isDarkMode;
+            localStorage.setItem('darkMode', isDarkMode);
+            applyDarkMode();
+        });
+    }
+
+    // Language switch logic
+    const langToggle = document.getElementById('langToggle');
+    if (langToggle) {
+        langToggle.addEventListener('click', () => {
+            currentLang = currentLang === 'id' ? 'en' : 'id';
+            localStorage.setItem('lang', currentLang);
+            updateLanguageText();
+        });
+    }
+
+    updateLanguageText();
 });
