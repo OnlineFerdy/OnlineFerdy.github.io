@@ -27,9 +27,12 @@
         </div>
         <div class="drawer-content">
             <div class="drawer-links">
-                <a href="https://wa.me/6281397796565" target="_blank"><i class="ri-palette-line"></i> Custom</a>
-                <a href="https://wa.me/6281397796565" target="_blank"><i class="ri-calendar-event-line"></i> Order event</a>
-                <a href="https://wa.me/6281397796565" target="_blank"><i class="ri-presentation-line"></i> Order training</a>
+                <a href="#" target="_blank"><i class="ri-palette-line"></i> <span class="lang-text" data-en="Custom"
+                        data-id="Kustom">Kustom</span></a>
+                <a href="#" target="_blank"><i class="ri-calendar-event-line"></i> <span class="lang-text"
+                        data-en="Event order" data-id="Pesan acara">Pesan acara</span></a>
+                <a href="#" target="_blank"><i class="ri-presentation-line"></i> <span class="lang-text"
+                        data-en="Training order" data-id="Pesan pelatihan">Pesan pelatihan</span></a>
                 <a href="#" target="_blank"><i class="ri-shopping-bag-line"></i> Shopee</a>
             </div>
         </div>
@@ -41,12 +44,20 @@
             <div class="burger-menu" id="burgerMenu">
                 <i class="ri-menu-line"></i>
             </div>
+            <div class="left-toggles">
+                <button id="darkModeToggle" class="toggle-btn" title="Toggle Dark Mode"><i
+                        class="ri-moon-line"></i></button>
+                <button id="langToggle" class="toggle-btn" title="Toggle Language">ID</button>
+            </div>
             <img src="images/theLogo.png" alt="Aida Craft" class="logo">
 
             <div class="header-icons">
-                <a href="https://wa.me/6281397796565" target="_blank">Custom</a>
-                <a href="https://wa.me/6281397796565" target="_blank">Order acara</a>
-                <a href="https://wa.me/6281397796565" target="_blank">Pelatihan</a>
+                <a href="https://wa.me/6281397796565" target="_blank" class="lang-text" data-en="Custom"
+                    data-id="Kustom">Kustom</a>
+                <a href="https://wa.me/6281397796565" target="_blank" class="lang-text" data-en="Event order"
+                    data-id="Pesan acara">Pesan acara</a>
+                <a href="https://wa.me/6281397796565" target="_blank" class="lang-text" data-en="Training"
+                    data-id="Pelatihan">Pelatihan</a>
                 <a href="#" target="_blank">Shopee</a>
             </div>
         </div>
@@ -69,11 +80,15 @@
     <section class="hero">
         <div class="container hero-content">
             <div class="hero-text">
-                <h1>Timeless beauty that never fades.</h1>
-                <p>Artificial flowers for every occasion—from birthdays to thank yous to just because.</p>
-                <button class="btn-primary"
-                    onclick="document.querySelector('.bestsellers').scrollIntoView({ behavior: 'smooth' })">Shop
-                    Now</button>
+                <h1 class="lang-text" data-en="Timeless beauty that never fades."
+                    data-id="Keindahan abadi yang tak pernah pudar.">Keindahan abadi yang tak pernah pudar.</h1>
+                <p class="lang-text"
+                    data-en="Artificial flowers for every occasion—from birthdays to thank yous to just because."
+                    data-id="Bunga artifisial untuk setiap kesempatan—dari ulang tahun, terima kasih, hingga kejutan manis.">
+                    Bunga artifisial untuk setiap kesempatan—dari ulang tahun, terima kasih, hingga kejutan manis.</p>
+                <button class="btn-primary lang-text" data-en="Shop Now" data-id="Belanja Sekarang"
+                    onclick="document.querySelector('.bestsellers').scrollIntoView({ behavior: 'smooth' })">Belanja
+                    Sekarang</button>
             </div>
             <div class="hero-image-wrapper">
                 <img src="bunga mama cropped/basket bunga.png" alt="Modern Bouquets" class="hero-flower-img">
@@ -84,30 +99,55 @@
     <!-- Features Bar -->
     <section class="features">
         <div class="container features-list">
-            <div class="feature-item"><i class="ri-sparkling-fill"></i> Aesthetic</div>
-            <div class="feature-item"><i class="ri-leaf-line"></i> Organic</div>
-            <div class="feature-item"><i class="ri-history-line"></i> Last long</div>
-            <div class="feature-item"><i class="ri-hand-heart-line"></i> Handmade</div>
+            <div class="feature-item"><i class="ri-sparkling-fill"></i> <span class="lang-text" data-en="Aesthetic"
+                    data-id="Estetik">Estetik</span></div>
+            <div class="feature-item"><i class="ri-leaf-line"></i> <span class="lang-text" data-en="Organic"
+                    data-id="Organik">Organik</span></div>
+            <div class="feature-item"><i class="ri-history-line"></i> <span class="lang-text" data-en="Last long"
+                    data-id="Tahan lama">Tahan lama</span></div>
+            <div class="feature-item"><i class="ri-hand-heart-line"></i> <span class="lang-text" data-en="Handmade"
+                    data-id="Buatan tangan">Buatan tangan</span></div>
         </div>
     </section>
 
     <!-- Bestselling Section -->
     <section class="bestsellers">
         <div class="container">
-            <h2>Bestselling Crafts</h2>
+            <h2 class="lang-text" data-en="Bestselling Crafts" data-id="Kerajinan Terlaris">Kerajinan Terlaris</h2>
             <div class="category-pills">
-                <button class="pill active" data-category="Best-Sellers">Best-Sellers</button>
-                <button class="pill" data-category="Moderns">Moderns</button>
-                <button class="pill" data-category="Traditionals">Traditionals</button>
-                <button class="pill" data-category="Bouquets">Bouquets</button>
-                <button class="pill" data-category="Crafts">Crafts</button>
-                <button class="pill" data-category="Customs">Customs</button>
+                <button class="pill active lang-text" data-category="Best-Sellers" data-en="Best-Sellers"
+                    data-id="Terlaris">Terlaris</button>
+                <button class="pill lang-text" data-category="Moderns" data-en="Moderns"
+                    data-id="Modern">Modern</button>
+                <button class="pill lang-text" data-category="Traditionals" data-en="Traditionals"
+                    data-id="Tradisional">Tradisional</button>
+                <button class="pill lang-text" data-category="Bouquets" data-en="Bouquets"
+                    data-id="Buket">Buket</button>
+                <button class="pill lang-text" data-category="Crafts" data-en="Crafts"
+                    data-id="Kerajinan">Kerajinan</button>
+                <button class="pill lang-text" data-category="Customs" data-en="Customs"
+                    data-id="Kustom">Kustom</button>
                 <!-- <button class="pill" data-category="Trainings">Trainings</button> -->
             </div>
         </div>
         <!-- Product Grid -->
         <div class="container product-grid" id="product-grid">
             <!-- Products will be rendered here by JS -->
+        </div>
+    </section>
+
+    <!-- Friends Section -->
+    <section class="friends-section">
+        <div class="container">
+            <h3 class="lang-text" data-en="Don't forget to visit our friends:"
+                data-id="Jangan lupa kunjungi teman kami:">Don't forget to visit our friends:</h3>
+            <a href="https://royal-surf-5857.warbal.workers.dev/" target="_blank" class="friend-card">
+                <div class="friend-card-content">
+                    <h4>Warbal (warung iqbal)</h4>
+                    <span class="friend-link">https://royal-surf-5857.warbal.workers.dev/</span>
+                </div>
+                <div class="friend-card-icon"><i class="ri-external-link-line"></i></div>
+            </a>
         </div>
     </section>
 
@@ -125,7 +165,9 @@
                 <a href="#" target="_blank"><i class="ri-pinterest-fill"></i></a>
             </div>
             <p class="footer-address">Medan Johor,Jl.Eka Rasmi, Kompleks Johor Townhouse, No. 20C</p>
-            <p class="footer-copyright">&copy; 2027 Aida Craft. All Rights Reserved.</p>
+            <p class="footer-copyright lang-text" data-en="&copy; 2027 Aida Craft. All Rights Reserved."
+                data-id="&copy; 2027 Aida Craft. Hak Cipta Dilindungi Undang-Undang.">&copy; 2027 Aida Craft. Hak Cipta
+                Dilindungi Undang-Undang.</p>
         </div>
     </footer>
 
