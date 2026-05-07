@@ -1,31 +1,7 @@
 // Shared JS for Article Pages
-// Handles: dark mode, language switching, mobile drawer
+// Handles: language switching, mobile drawer
 
 document.addEventListener('DOMContentLoaded', () => {
-
-    // ─── Dark Mode ───────────────────────────────────────────────
-    const darkModeToggle = document.getElementById('darkModeToggle');
-    let isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    const applyDarkMode = () => {
-        if (isDarkMode) {
-            document.body.classList.add('dark-mode');
-            if (darkModeToggle) darkModeToggle.innerHTML = '<i class="ri-sun-line"></i>';
-        } else {
-            document.body.classList.remove('dark-mode');
-            if (darkModeToggle) darkModeToggle.innerHTML = '<i class="ri-moon-line"></i>';
-        }
-    };
-
-    applyDarkMode();
-
-    if (darkModeToggle) {
-        darkModeToggle.addEventListener('click', () => {
-            isDarkMode = !isDarkMode;
-            localStorage.setItem('darkMode', isDarkMode);
-            applyDarkMode();
-        });
-    }
 
     // ─── Language Toggle ─────────────────────────────────────────
     let currentLang = localStorage.getItem('lang') || 'id';
