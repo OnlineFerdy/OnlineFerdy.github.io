@@ -47,21 +47,17 @@ document.addEventListener('DOMContentLoaded', () => {
             productCard.classList.add('product-card');
 
             // Badge from data
-            let badgeText = product.badge;
-            if (badgeText === 'Pre-order') {
-                badgeText = currentLang === 'id' ? 'Pesan Sekarang' : 'Pre-order';
-            }
-            const badgeHtml = badgeText ? `<span class="badge">${badgeText}</span>` : '';
-            const madeWithLoveText = currentLang === 'id' ? 'Dibuat dengan Cinta' : 'Made with Love';
+            const subtitleText = currentLang === 'id' ? 'Dibuat dengan Kulit Jagung' : 'Made with Corn Husk';
+            const buyNowText = currentLang === 'id' ? 'Beli Sekarang' : 'Buy Now';
 
             productCard.innerHTML = `
                 <img src="${product.image}" alt="${product.name}" class="product-img">
                 <div class="product-info">
                     <h3>${product.name}</h3>
                     <div class="product-divider"></div>
-                    <p class="price">${madeWithLoveText}</p>
+                    <p class="price">${subtitleText}</p>
                     <p class="subscribe-price"><strong>${formatCurrency(product.price)}</strong></p>
-                    ${badgeHtml}
+                    <a href="https://wa.me/62895321316041?text=halo%2C%20saya%20dari%20web%20aida%20craft%2C%20ingin%20membeli%20produk%20${encodeURIComponent(product.name)}%20dari%20web" target="_blank" class="btn-shop-now lang-text" data-en="Buy Now" data-id="Beli Sekarang">${buyNowText}</a>
                 </div>
             `;
             productGrid.appendChild(productCard);
@@ -104,30 +100,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (closeDrawer) closeDrawer.addEventListener('click', closeDrawerFunc);
     if (mobileDrawerOverlay) mobileDrawerOverlay.addEventListener('click', closeDrawerFunc);
-
-    // Dark mode logic
-    const darkModeToggle = document.getElementById('darkModeToggle');
-    let isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-    const applyDarkMode = () => {
-        if (isDarkMode) {
-            document.body.classList.add('dark-mode');
-            darkModeToggle.innerHTML = '<i class="ri-sun-line"></i>';
-        } else {
-            document.body.classList.remove('dark-mode');
-            darkModeToggle.innerHTML = '<i class="ri-moon-line"></i>';
-        }
-    };
-
-    applyDarkMode();
-
-    if (darkModeToggle) {
-        darkModeToggle.addEventListener('click', () => {
-            isDarkMode = !isDarkMode;
-            localStorage.setItem('darkMode', isDarkMode);
-            applyDarkMode();
-        });
-    }
 
     // Language switch logic
     const langToggle = document.getElementById('langToggle');
